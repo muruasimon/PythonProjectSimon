@@ -47,7 +47,6 @@ def save_to_snowflake(data):
                 district_data.get('recovered', 0),
                 district_data.get('deceased', 0)
             ))
-
     # Commit the transaction
     conn.commit()
 
