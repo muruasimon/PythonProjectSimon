@@ -10,7 +10,6 @@ def GetDataApi():
 def save_to_s3(data, bucket_name, object_key, aws_access_key_id, aws_secret_access_key):
     # Initialize S3 client with provided credentials
     s3 = boto3.client('s3', aws_access_key_id=aws_access_key_id, aws_secret_access_key=aws_secret_access_key)
-
     # Convert data to JSON string
     json_data = json.dumps(data)
 
