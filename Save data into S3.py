@@ -21,8 +21,6 @@ def main():
     data = GetDataApi()
     bucket_name = 'datafrompython'  # Replace with your S3 bucket name
     object_key = 'covid_data.json'  # Specify the key for the S3 object
-    aws_access_key_id = 'AKIAVYRKGDUOUZLMF4KO'  # Replace with your AWS access key ID
-    aws_secret_access_key = 'k5f6DK9fm1Yve754yLeM10k8EDPILSeQjizbOhJU'  # Replace with your AWS secret access key
     save_to_s3(data, bucket_name, object_key, aws_access_key_id, aws_secret_access_key)
 
 if __name__ == "__main__":
